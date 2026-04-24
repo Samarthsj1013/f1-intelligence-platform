@@ -3,6 +3,10 @@ import axios from 'axios'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, LabelList } from 'recharts'
 import RaceSelector from '../components/RaceSelector'
 import { TYRE_COLORS, TEAM_COLORS, DRIVER_TEAM_MAP, getDriverColor } from '../utils/teamColors'
+const TYRE_COLORS_LOCAL = {
+  SOFT: '#e10600', MEDIUM: '#ffd700', HARD: '#ffffff',
+  INTERMEDIATE: '#00d2be', WET: '#0067ff',
+}
 
 export default function TyreStrategy() {
   const [year, setYear] = useState(2025)
